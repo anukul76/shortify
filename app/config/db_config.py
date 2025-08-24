@@ -2,10 +2,10 @@ import os
 from urllib import parse
 from pydantic_settings import BaseSettings
 
-# Load environment variables from .env.db file
+# Load environment variables from .env.db.db file
 # from dotenv import load_dotenv
 
-# load_dotenv(".env.db")
+# load_dotenv(".env.db.db")
 
 
 class MySQLSettingsW(BaseSettings):
@@ -22,7 +22,7 @@ class MySQLSettingsW(BaseSettings):
     W_PASSWORD: str = "1234"
 
     class Config:
-        env_file = ".env.db"
+        env_file = ".env.db.db"
         validate_by_name = True
         extra = "ignore"
 
