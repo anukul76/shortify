@@ -22,7 +22,7 @@ class MySQLSettingsW(BaseSettings):
     W_PASSWORD: str = "1234"
 
     class Config:
-        env_file = ".env.db.db"
+        env_file = ".env.db"
         validate_by_name = True
         extra = "ignore"
 

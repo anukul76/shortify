@@ -34,3 +34,4 @@ consumer.py
 producer.py
 Makefile
 *.sh
+myvenv
