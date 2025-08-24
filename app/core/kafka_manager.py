@@ -2,7 +2,7 @@ import asyncio
 import json
 from aiokafka import AIOKafkaConsumer, TopicPartition, AIOKafkaProducer
 from aiokafka.structs import OffsetAndMetadata
-
+from typing import Optional
 from app.core.dispatcher import dispatch_event  # your message dispatch logic
 from app.core.logging_config import get_logger
 
@@ -18,7 +18,7 @@ class KafkaManager:
         self.running = False
 
         # Producer
-        self.producer: AIOKafkaProducer | None = None
+        self.producer: Optional[AIOKafkaProducer] = None
 
     async def _consume_topic(self, topic: str, group_id: str):
         consumer = AIOKafkaConsumer(
