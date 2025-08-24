@@ -1,0 +1,36 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+build/
+
+# Misc
+.DS_Store
+.env
+.vscode/
+.idea/
+*.log
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.bak
+*.tmp
+*.old
+*.orig
+*.rej
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.yml
+Dockerfile      
+test.py
+consumer.py
+producer.py
+Makefile
+*.sh
